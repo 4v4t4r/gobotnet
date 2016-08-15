@@ -1,0 +1,1 @@
+go fmt C:\Go\src\github.com\gobotnet\main.go

@@ -1,0 +1,9 @@
+go get github.com/satori/go.uuid
+go get github.com/aglyzov/charmap
+go get golang.org/x/sys/windows/registry
+go get github.com/AllenDang/w32
+go get github.com/dgrijalva/jwt-go
+go get github.com/labstack/echo/...
+go get github.com/mattn/go-sqlite3
+go get github.com/tonnerre/golang-dns
+go get github.com/tv42/zbase32

