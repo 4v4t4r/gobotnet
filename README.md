@@ -16,8 +16,6 @@ Pure HTTP and DNS Botnet written in Golang for Windows. C&C also written in Gola
 * Supporting System Proxy and NTLM authentication
 * DNS Tunnel
 
-#Build
-
 #Terms of Use
 
 * Do NOT use this on any computer you do not own, or are allowed to run this on;
