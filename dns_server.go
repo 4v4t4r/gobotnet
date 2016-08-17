@@ -248,7 +248,7 @@ func ProcessingData(urlWithData string) (textResponse []byte) {
 	case op_registration:
 		if sendData, isDataReceived = ReceiveData(receiveData[0:offset], &registrationMutex, mapRegistration, typeOperation); isDataReceived {
 			data, err := zbase32.DecodeString(joinToString(sendData.data))
-			name, err := zbase32.DecodeString(joinToString(sendData.name))
+			name, err := zbase32.DecodeString(sendData.name)
 			CheckError(err)
 			data_base64_escaped := url.QueryEscape(base64.StdEncoding.EncodeToString(data))
 			name_base64_escaped := url.QueryEscape(base64.StdEncoding.EncodeToString(name))
